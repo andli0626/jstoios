@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Jstoalbum_ViewController : UIViewController
+@interface Jstophoto_url_ViewController : UIViewController
 
 @end

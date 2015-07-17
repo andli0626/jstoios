@@ -16,11 +16,12 @@
 		A812BF7E1B57E4F300529A1A /* jstoiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A812BF7D1B57E4F300529A1A /* jstoiosTests.m */; };
 		A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */; };
 		A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */; };
-		A86168D31B5886B800B5BDAF /* Jstoalbum_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D21B5886B800B5BDAF /* Jstoalbum_ViewController.m */; };
+		A86168D31B5886B800B5BDAF /* Jstophoto_url_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */; };
 		A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */; };
 		A86168D81B58883600B5BDAF /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A86168D71B58883600B5BDAF /* readme.txt */; };
-		A86168DC1B58887F00B5BDAF /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DA1B58887F00B5BDAF /* test.html */; };
-		A86168DD1B58887F00B5BDAF /* fileinput.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DB1B58887F00B5BDAF /* fileinput.html */; };
+		A86168DD1B58887F00B5BDAF /* js to file.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DB1B58887F00B5BDAF /* js to file.html */; };
+		A86168E31B58A89100B5BDAF /* js to photo.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DF1B58A89100B5BDAF /* js to photo.html */; };
+		A86168ED1B58AA3700B5BDAF /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168EC1B58AA3700B5BDAF /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +52,16 @@
 		A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstofile_ViewController.m; sourceTree = "<group>"; };
 		A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JstoPhoto_ViewController.h; sourceTree = "<group>"; };
 		A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JstoPhoto_ViewController.m; sourceTree = "<group>"; };
-		A86168D11B5886B800B5BDAF /* Jstoalbum_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstoalbum_ViewController.h; sourceTree = "<group>"; };
-		A86168D21B5886B800B5BDAF /* Jstoalbum_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstoalbum_ViewController.m; sourceTree = "<group>"; };
+		A86168D11B5886B800B5BDAF /* Jstophoto_url_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstophoto_url_ViewController.h; sourceTree = "<group>"; };
+		A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstophoto_url_ViewController.m; sourceTree = "<group>"; };
 		A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstorecord_ViewController.h; sourceTree = "<group>"; };
 		A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstorecord_ViewController.m; sourceTree = "<group>"; };
 		A86168D71B58883600B5BDAF /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		A86168DA1B58887F00B5BDAF /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
-		A86168DB1B58887F00B5BDAF /* fileinput.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fileinput.html; sourceTree = "<group>"; };
+		A86168DB1B58887F00B5BDAF /* js to file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js to file.html"; sourceTree = "<group>"; };
 		A86168DE1B58894300B5BDAF /* my.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my.pch; sourceTree = "<group>"; };
+		A86168DF1B58A89100B5BDAF /* js to photo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js to photo.html"; sourceTree = "<group>"; };
+		A86168EB1B58AA3700B5BDAF /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		A86168EC1B58AA3700B5BDAF /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 		A812BF601B57E4F300529A1A /* jstoios */ = {
 			isa = PBXGroup;
 			children = (
+				A86168EB1B58AA3700B5BDAF /* NSData+Base64.h */,
+				A86168EC1B58AA3700B5BDAF /* NSData+Base64.m */,
 				A812BF651B57E4F300529A1A /* AppDelegate.h */,
 				A812BF661B57E4F300529A1A /* AppDelegate.m */,
 				A812BF681B57E4F300529A1A /* ViewController.h */,
@@ -111,8 +116,8 @@
 				A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */,
 				A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */,
 				A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */,
-				A86168D11B5886B800B5BDAF /* Jstoalbum_ViewController.h */,
-				A86168D21B5886B800B5BDAF /* Jstoalbum_ViewController.m */,
+				A86168D11B5886B800B5BDAF /* Jstophoto_url_ViewController.h */,
+				A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */,
 				A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */,
 				A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */,
 				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
@@ -153,8 +158,8 @@
 		A86168D91B58886600B5BDAF /* html */ = {
 			isa = PBXGroup;
 			children = (
-				A86168DA1B58887F00B5BDAF /* test.html */,
-				A86168DB1B58887F00B5BDAF /* fileinput.html */,
+				A86168DB1B58887F00B5BDAF /* js to file.html */,
+				A86168DF1B58A89100B5BDAF /* js to photo.html */,
 			);
 			name = html;
 			path = jstoios;
@@ -244,9 +249,9 @@
 				A812BF6D1B57E4F300529A1A /* Main.storyboard in Resources */,
 				A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */,
 				A86168D81B58883600B5BDAF /* readme.txt in Resources */,
-				A86168DC1B58887F00B5BDAF /* test.html in Resources */,
+				A86168E31B58A89100B5BDAF /* js to photo.html in Resources */,
 				A812BF6F1B57E4F300529A1A /* Images.xcassets in Resources */,
-				A86168DD1B58887F00B5BDAF /* fileinput.html in Resources */,
+				A86168DD1B58887F00B5BDAF /* js to file.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +274,9 @@
 				A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */,
 				A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */,
 				A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */,
-				A86168D31B5886B800B5BDAF /* Jstoalbum_ViewController.m in Sources */,
+				A86168D31B5886B800B5BDAF /* Jstophoto_url_ViewController.m in Sources */,
 				A812BF641B57E4F300529A1A /* main.m in Sources */,
+				A86168ED1B58AA3700B5BDAF /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

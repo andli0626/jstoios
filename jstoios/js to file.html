@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>js to file</title>
+        <meta name="description" content="" />
+        <meta name="author" content="Administrator" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    </head>
+    <body>
+        <div>
+            <p>选择拍照，相册</p>
+            <input type="file" id="file" accept="image/*" capture="camera" />
+            <img src="" alt="" id="previewImage" width="200" />
+        </div>
+        <script>
+            document.getElementById('file').onchange = function(evt) {
+                
+                // 如果浏览器不支持FileReader，则不处理
+                
+                if (!window.FileReader) return;
+                
+                var files = evt.target.files;
+                
+                for (var i = 0, f; f = files[i]; i++) {
+                    
+                    if (!f.type.match('image.*')) {
+                        
+                        continue;
+                        
+                    }
+                    
+                    
+                    var reader = new FileReader();
+                    
+                    reader.onload = (function(theFile) {
+                                     
+                                     return function(e) {
+                                     
+                                     // img 元素
+                                     console.log(e.target.result)
+                                     document.getElementById('previewImage').src = e.target.result;
+                                     
+                                     };
+                                     
+                                     })(f);
+                                     
+                                     
+                                     reader.readAsDataURL(f);
+                                     
+                }
+                
+                img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAABZCAYAAABR/liSAAAAGXRFW…GNbEA2sgHZyEY2IBvZgGxkA7KRjWxANrIB2chGNvwdvwIMABPull6DKRZKAAAAAElFTkSuQmCC'
+            }
+        </script>   
+    </body>
+</html>

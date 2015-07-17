@@ -1,22 +1,21 @@
 //
-//  JstoPhoto_ViewController.m
+//  Jstoalbum_ViewController.m
 //  jstoios
 //
 //  Created by AndLi on 15/7/17.
 //  Copyright (c) 2015年 AndLi. All rights reserved.
-//  jstophoto 分别调用 拍照 图库 相册
+//
 
-#import "JstoPhoto_ViewController.h"
+#import "Jstophoto_url_ViewController.h"
+#import "NSData+Base64.h"
 
-@interface JstoPhoto_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
-{
-     NSString *callback;
+@interface Jstophoto_url_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>{
+    NSString *callback;
 }
 @property(nonatomic,retain) UIWebView *mWebView;
-
 @end
 
-@implementation JstoPhoto_ViewController
+@implementation Jstophoto_url_ViewController
 
 - (void)viewDidLoad
 {
@@ -26,7 +25,7 @@
     _mWebView.delegate = self;
     
     [self.view addSubview:_mWebView];
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"js to photo" ofType:@"html"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"camera" ofType:@"html"];
     NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     [_mWebView loadHTMLString:fileContent baseURL:nil];
 }
@@ -108,5 +107,4 @@
     [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callback, data]];
 }
 @end
-
 
