@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QH3-Ap-rn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-387" y="444"/>
+            <point key="canvasLocation" x="-819" y="496"/>
         </scene>
         <!--js to ios-->
         <scene sceneID="1w2-bj-S9e">
@@ -36,6 +36,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="DRh-oY-aeg" kind="push" id="azu-ss-Ovo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kg6-Xy-nGs">
                                 <rect key="frame" x="11" y="122" width="299" height="35"/>
@@ -45,6 +48,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ybu-dW-cu4" kind="push" id="QZe-2u-WRK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8vy-eR-7gn">
                                 <rect key="frame" x="11" y="165" width="299" height="35"/>
@@ -54,6 +60,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Aio-GG-yPK" kind="push" id="Pi6-u7-6gR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l0Q-9l-zCE">
                                 <rect key="frame" x="11" y="208" width="299" height="35"/>
@@ -63,6 +72,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WPp-EC-wrt" kind="push" id="8cG-Mf-aCs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,7 +83,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mU-Xe-uXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="444"/>
+            <point key="canvasLocation" x="-328" y="496"/>
+        </scene>
+        <!--Jsto Photo View Controller-->
+        <scene sceneID="Qra-QU-39A">
+            <objects>
+                <viewController id="Ybu-dW-cu4" customClass="JstoPhoto_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWL-Fi-TfI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oa5-fY-ixp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxp-oz-asL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="88"/>
+        </scene>
+        <!--Jstorecord View Controller-->
+        <scene sceneID="52T-OH-9qc">
+            <objects>
+                <viewController id="WPp-EC-wrt" customClass="Jstorecord_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cMJ-jO-gag">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KmZ-VS-bCq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BP6-lk-aYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="1234"/>
+        </scene>
+        <!--Jstoalbum View Controller-->
+        <scene sceneID="Img-J2-dfW">
+            <objects>
+                <viewController id="Aio-GG-yPK" customClass="Jstoalbum_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AuM-vV-KQS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W4T-Mn-koS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcN-9b-Nyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="713"/>
+        </scene>
+        <!--Jstofile View Controller-->
+        <scene sceneID="dQ4-gB-mbm">
+            <objects>
+                <viewController id="DRh-oY-aeg" customClass="Jstofile_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J7m-ma-aDB" customClass="jsto">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ny0-yK-ZVv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xW5-1C-UFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="-258"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

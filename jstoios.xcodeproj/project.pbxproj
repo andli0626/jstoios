@@ -14,6 +14,13 @@
 		A812BF6F1B57E4F300529A1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A812BF6E1B57E4F300529A1A /* Images.xcassets */; };
 		A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A812BF701B57E4F300529A1A /* LaunchScreen.xib */; };
 		A812BF7E1B57E4F300529A1A /* jstoiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A812BF7D1B57E4F300529A1A /* jstoiosTests.m */; };
+		A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */; };
+		A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */; };
+		A86168D31B5886B800B5BDAF /* Jstoalbum_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D21B5886B800B5BDAF /* Jstoalbum_ViewController.m */; };
+		A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */; };
+		A86168D81B58883600B5BDAF /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A86168D71B58883600B5BDAF /* readme.txt */; };
+		A86168DC1B58887F00B5BDAF /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DA1B58887F00B5BDAF /* test.html */; };
+		A86168DD1B58887F00B5BDAF /* fileinput.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DB1B58887F00B5BDAF /* fileinput.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,18 @@
 		A812BF771B57E4F300529A1A /* jstoiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jstoiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A812BF7C1B57E4F300529A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A812BF7D1B57E4F300529A1A /* jstoiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jstoiosTests.m; sourceTree = "<group>"; };
+		A86168CB1B5885E100B5BDAF /* Jstofile_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstofile_ViewController.h; sourceTree = "<group>"; };
+		A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstofile_ViewController.m; sourceTree = "<group>"; };
+		A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JstoPhoto_ViewController.h; sourceTree = "<group>"; };
+		A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JstoPhoto_ViewController.m; sourceTree = "<group>"; };
+		A86168D11B5886B800B5BDAF /* Jstoalbum_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstoalbum_ViewController.h; sourceTree = "<group>"; };
+		A86168D21B5886B800B5BDAF /* Jstoalbum_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstoalbum_ViewController.m; sourceTree = "<group>"; };
+		A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstorecord_ViewController.h; sourceTree = "<group>"; };
+		A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstorecord_ViewController.m; sourceTree = "<group>"; };
+		A86168D71B58883600B5BDAF /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		A86168DA1B58887F00B5BDAF /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		A86168DB1B58887F00B5BDAF /* fileinput.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fileinput.html; sourceTree = "<group>"; };
+		A86168DE1B58894300B5BDAF /* my.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				A812BF601B57E4F300529A1A /* jstoios */,
+				A86168D91B58886600B5BDAF /* html */,
+				A812BF611B57E4F300529A1A /* Supporting Files */,
 				A812BF7A1B57E4F300529A1A /* jstoiosTests */,
 				A812BF5F1B57E4F300529A1A /* Products */,
+				A86168D71B58883600B5BDAF /* readme.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,10 +107,17 @@
 				A812BF661B57E4F300529A1A /* AppDelegate.m */,
 				A812BF681B57E4F300529A1A /* ViewController.h */,
 				A812BF691B57E4F300529A1A /* ViewController.m */,
+				A86168CB1B5885E100B5BDAF /* Jstofile_ViewController.h */,
+				A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */,
+				A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */,
+				A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */,
+				A86168D11B5886B800B5BDAF /* Jstoalbum_ViewController.h */,
+				A86168D21B5886B800B5BDAF /* Jstoalbum_ViewController.m */,
+				A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */,
+				A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */,
 				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
 				A812BF6E1B57E4F300529A1A /* Images.xcassets */,
 				A812BF701B57E4F300529A1A /* LaunchScreen.xib */,
-				A812BF611B57E4F300529A1A /* Supporting Files */,
 			);
 			path = jstoios;
 			sourceTree = "<group>";
@@ -98,8 +127,10 @@
 			children = (
 				A812BF621B57E4F300529A1A /* Info.plist */,
 				A812BF631B57E4F300529A1A /* main.m */,
+				A86168DE1B58894300B5BDAF /* my.pch */,
 			);
 			name = "Supporting Files";
+			path = jstoios;
 			sourceTree = "<group>";
 		};
 		A812BF7A1B57E4F300529A1A /* jstoiosTests */ = {
@@ -117,6 +148,16 @@
 				A812BF7C1B57E4F300529A1A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A86168D91B58886600B5BDAF /* html */ = {
+			isa = PBXGroup;
+			children = (
+				A86168DA1B58887F00B5BDAF /* test.html */,
+				A86168DB1B58887F00B5BDAF /* fileinput.html */,
+			);
+			name = html;
+			path = jstoios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +243,10 @@
 			files = (
 				A812BF6D1B57E4F300529A1A /* Main.storyboard in Resources */,
 				A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */,
+				A86168D81B58883600B5BDAF /* readme.txt in Resources */,
+				A86168DC1B58887F00B5BDAF /* test.html in Resources */,
 				A812BF6F1B57E4F300529A1A /* Images.xcassets in Resources */,
+				A86168DD1B58887F00B5BDAF /* fileinput.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +266,10 @@
 			files = (
 				A812BF6A1B57E4F300529A1A /* ViewController.m in Sources */,
 				A812BF671B57E4F300529A1A /* AppDelegate.m in Sources */,
+				A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */,
+				A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */,
+				A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */,
+				A86168D31B5886B800B5BDAF /* Jstoalbum_ViewController.m in Sources */,
 				A812BF641B57E4F300529A1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = jstoios/my.pch;
 				INFOPLIST_FILE = jstoios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = jstoios/my.pch;
 				INFOPLIST_FILE = jstoios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +471,7 @@
 				A812BF831B57E4F300529A1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A812BF841B57E4F300529A1A /* Build configuration list for PBXNativeTarget "jstoiosTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +480,7 @@
 				A812BF861B57E4F300529A1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
