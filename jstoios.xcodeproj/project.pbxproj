@@ -32,6 +32,7 @@
 		A86168FE1B58BCBE00B5BDAF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86168FD1B58BCBE00B5BDAF /* SystemConfiguration.framework */; };
 		A86169011B58BF3D00B5BDAF /* NavTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A86169001B58BF3D00B5BDAF /* NavTitleButton.m */; };
 		A86169041B58BF7C00B5BDAF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A86169031B58BF7C00B5BDAF /* UIView+Extension.m */; };
+		A86169071B58D51600B5BDAF /* ShowCode_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		A86169001B58BF3D00B5BDAF /* NavTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavTitleButton.m; sourceTree = "<group>"; };
 		A86169021B58BF7B00B5BDAF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		A86169031B58BF7C00B5BDAF /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCode_ViewController.h; sourceTree = "<group>"; };
+		A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCode_ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +152,8 @@
 				A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */,
 				A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */,
 				A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */,
-				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
-				A812BF6E1B57E4F300529A1A /* Images.xcassets */,
-				A812BF701B57E4F300529A1A /* LaunchScreen.xib */,
+				A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */,
+				A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */,
 			);
 			path = jstoios;
 			sourceTree = "<group>";
@@ -159,6 +161,9 @@
 		A812BF611B57E4F300529A1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
+				A812BF6E1B57E4F300529A1A /* Images.xcassets */,
+				A812BF701B57E4F300529A1A /* LaunchScreen.xib */,
 				A86168FD1B58BCBE00B5BDAF /* SystemConfiguration.framework */,
 				A86168FB1B58BCB500B5BDAF /* AVFoundation.framework */,
 				A86168F91B58BCAE00B5BDAF /* AudioToolbox.framework */,
@@ -322,6 +327,7 @@
 				A86169041B58BF7C00B5BDAF /* UIView+Extension.m in Sources */,
 				A812BF6A1B57E4F300529A1A /* ViewController.m in Sources */,
 				A812BF671B57E4F300529A1A /* AppDelegate.m in Sources */,
+				A86169071B58D51600B5BDAF /* ShowCode_ViewController.m in Sources */,
 				A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */,
 				A86169011B58BF3D00B5BDAF /* NavTitleButton.m in Sources */,
 				A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */,

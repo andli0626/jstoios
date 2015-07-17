@@ -7,31 +7,44 @@
 //  通过加载input控件，js实现文件上传功能
 
 #import "Jstofile_ViewController.h"
+#import "ShowCode_ViewController.h"
 
 @interface Jstofile_ViewController ()<UIWebViewDelegate>
 {
-    UIWebView *mWebView;
+    NSString *htmlstr;
 }
+@property(nonatomic,retain) UIWebView *mWebView;
 @end
 @implementation Jstofile_ViewController
-{
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.title = @"js to file";
     
-    mWebView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, AppWidth, AppHeight)];
-    mWebView.delegate = self;
-    [self.view addSubview:mWebView];
+    _mWebView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, AppWidth, AppHeight)];
+    _mWebView.delegate = self;
+    [self.view addSubview:_mWebView];
     
-    //加载本地html
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"js to file.html" withExtension:nil];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [mWebView loadRequest:request];
+    NSString *html      = [[NSBundle mainBundle] pathForResource:@"js to file" ofType:@"html"];
+    htmlstr             = [NSString stringWithContentsOfFile:html encoding:NSUTF8StringEncoding error:nil];
     
+    [_mWebView loadHTMLString:htmlstr baseURL:nil];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"查看源码"
+                                                            style:UIBarButtonItemStylePlain
+                                                           target:self
+                                                           action:@selector(showCode)];
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+//显示源码
+-(void)showCode{
+    ShowCode_ViewController *view = [[ShowCode_ViewController alloc]init];
+    view.isurl    = @"0";
+    view.content  = htmlstr;
+    [self.navigationController pushViewController:view
+                                         animated:YES];
 }
 
 @end

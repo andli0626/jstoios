@@ -7,10 +7,12 @@
 //  jstophoto 分别调用 拍照 图库 相册
 
 #import "JstoPhoto_ViewController.h"
+#import "ShowCode_ViewController.h"
 
 @interface JstoPhoto_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
      NSString *callback;
+     NSString *htmlstr;
 }
 @property(nonatomic,retain) UIWebView *mWebView;
 
@@ -24,11 +26,27 @@
     
     _mWebView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, AppWidth, AppHeight)];
     _mWebView.delegate = self;
-    
     [self.view addSubview:_mWebView];
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"js to photo" ofType:@"html"];
-    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-    [_mWebView loadHTMLString:fileContent baseURL:nil];
+    
+    NSString *html      = [[NSBundle mainBundle] pathForResource:@"js to photo" ofType:@"html"];
+    htmlstr   = [NSString stringWithContentsOfFile:html encoding:NSUTF8StringEncoding error:nil];
+    
+    [_mWebView loadHTMLString:htmlstr baseURL:nil];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"查看源码"
+                                                            style:UIBarButtonItemStylePlain
+                                                           target:self
+                                                           action:@selector(showCode)];
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+//显示源码
+-(void)showCode{
+    ShowCode_ViewController *view = [[ShowCode_ViewController alloc]init];
+    view.isurl    = @"0";
+    view.content  = htmlstr;
+    [self.navigationController pushViewController:view
+                                         animated:YES];
 }
 
 

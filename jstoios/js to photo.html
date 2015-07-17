@@ -1,16 +1,21 @@
 <script>
+    
+    //相机回调
     function cameraCallback(imageData) {
         var img = createImageWithBase64(imageData);
         document.getElementById("cameraWrapper").appendChild(img);
     }
+    //图库回调
     function photolibraryCallback(imageData) {
         var img = createImageWithBase64(imageData);
         document.getElementById("photolibraryWrapper").appendChild(img);
     }
+    //相册回调
     function albumCallback(imageData) {
         var img = createImageWithBase64(imageData);
         document.getElementById("albumWrapper").appendChild(img);
     }
+    //显示图片回调
     function createImageWithBase64(imageData) {
         var img = new Image();
         img.src = "data:image/jpeg;base64," + imageData;
