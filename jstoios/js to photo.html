@@ -1,5 +1,7 @@
 <script>
     
+    
+    
     //相机回调
     function cameraCallback(imageData) {
         var img = createImageWithBase64(imageData);
@@ -24,6 +26,7 @@
         return img;
     }
 </script>
+<p>加载本地HTML文件</p>
 <p style="text-align:center;padding:20px;">
     <a href="js-call://camera/cameraCallback">拍照</a>&nbsp;&nbsp;
     <a href="js-call://photolibrary/photolibraryCallback">图库</a>&nbsp;&nbsp;
