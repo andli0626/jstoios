@@ -11,8 +11,14 @@
 
 #import <PgySDK/PgyManager.h>
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
+@interface ViewController ()<UIAlertViewDelegate>
+{
+    NSString *version;
+    NSString *downloadURL;
+    NSString *message;
+    NSString *newversion;
+    NSString *appUrl;
+}
 
 @end
 
@@ -24,9 +30,7 @@
     self.title = @"js to ios";
     
     NSDictionary *dic = [[NSBundle mainBundle]infoDictionary];
-    NSString *version = [dic objectForKey:@"CFBundleShortVersionString"];
-
-    _versionLabel.hidden =YES;
+    version = [dic objectForKey:@"CFBundleShortVersionString"];
     
 
     NavTitleButton *titleView = [[NavTitleButton alloc]init];
@@ -37,9 +41,9 @@
     [self checkUpdate];
 }
 
-/**
- *  检查更新
- */
+#warning *************************************** 整合蒲公英自动更新代码 *********************************************************
+
+//检查更新
 - (void)checkUpdate
 {
     //  有回调的检查更新
@@ -49,28 +53,57 @@
     //    [[PgyManager sharedPgyManager] checkUpdate];
 }
 
-/**
- *  检查更新回调
- *
- *  @param response 检查更新的返回结果
- */
+//检查更新的返回结果
 - (void)updateMethod:(NSDictionary *)response
 {
     if (response[@"downloadURL"]) {
+        appUrl      = response[@"appUrl"];
+        message     = response[@"releaseNote"];
+        newversion  = response[@"versionName"];
+        downloadURL = response[@"downloadURL"];
         
-        NSString *message = response[@"releaseNote"];
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"发现新版本"
-                                                            message:message
-                                                           delegate:self
-                                                  cancelButtonTitle:@"好的"
-                                                  otherButtonTitles:nil,
-                                  nil];
-        
-        [alertView show];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"更新"
+                                                                style:UIBarButtonItemStylePlain
+                                                               target:self
+                                                               action:@selector(showUpdateAlert)];
+        self.navigationItem.rightBarButtonItem = item;
+        [self showUpdateAlert];
     }
-    
-    //    调用checkUpdateWithDelegete后可用此方法来更新本地的版本号，如果有更新的话，在调用了此方法后再次调用将不提示更新信息。
-    //    [[PgyManager sharedPgyManager] updateLocalBuildNumber];
 }
+
+//更新提示对话框
+-(void)showUpdateAlert{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"发现新版本 V%@",newversion]
+                                                        message:[NSString stringWithFormat:@"%@",message]
+                                                       delegate:self
+                                              cancelButtonTitle:@"取消"
+                                              otherButtonTitles:@"确定",
+                              nil];
+    
+    [alertView show];
+}
+
+//对话框点击事件处理
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 1:
+        {
+            [self down];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+//下载操作
+-(void)down{
+    NSURL *url = [NSURL URLWithString:downloadURL];
+    [[UIApplication sharedApplication]openURL:url];
+}
+
+#warning *************************************** 整合蒲公英自动更新代码 *********************************************************
+
 
 @end

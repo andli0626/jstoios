@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <PgySDK/PgyManager.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [[PgyManager sharedPgyManager] startManagerWithAppId:@"c310389cf4d3b35d261f2e02cdb5308f"];
     return YES;
 }
 
