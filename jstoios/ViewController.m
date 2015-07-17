@@ -62,6 +62,10 @@
         newversion  = response[@"versionName"];
         downloadURL = response[@"downloadURL"];
         
+        if([newversion isEqualToString:version]){
+            return;
+        }
+        
         UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"更新"
                                                                 style:UIBarButtonItemStylePlain
                                                                target:self
