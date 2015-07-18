@@ -4,7 +4,7 @@
 //
 //  Created by AndLi on 15/7/17.
 //  Copyright (c) 2015年 AndLi. All rights reserved.
-//
+//  加载URL
 
 #import "Jstophoto_url_ViewController.h"
 #import "NSData+Base64.h"
@@ -27,8 +27,10 @@
     _mWebView.delegate = self;
     [self.view addSubview:_mWebView];
     
+    //加载URL
     urlstr = @"https://dn-jstoios.qbox.me/js%20to%20photo.html";
-    NSURL *url = [NSURL URLWithString:@"https://dn-jstoios.qbox.me/js%20to%20photo.html"];
+    NSURL *url = [NSURL URLWithString:urlstr];
+    //UTF8编码，解决中文乱码
     NSString *strHtml = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     [_mWebView loadHTMLString:strHtml baseURL:nil];
     

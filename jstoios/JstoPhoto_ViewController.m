@@ -28,7 +28,9 @@
     _mWebView.delegate = self;
     [self.view addSubview:_mWebView];
     
+    //加载本地HTML
     NSString *html      = [[NSBundle mainBundle] pathForResource:@"js to photo" ofType:@"html"];
+    //UTF8编码，解决中文乱码
     htmlstr   = [NSString stringWithContentsOfFile:html encoding:NSUTF8StringEncoding error:nil];
     
     [_mWebView loadHTMLString:htmlstr baseURL:nil];

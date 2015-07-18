@@ -14,6 +14,9 @@
 		A812BF6F1B57E4F300529A1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A812BF6E1B57E4F300529A1A /* Images.xcassets */; };
 		A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A812BF701B57E4F300529A1A /* LaunchScreen.xib */; };
 		A812BF7E1B57E4F300529A1A /* jstoiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A812BF7D1B57E4F300529A1A /* jstoiosTests.m */; };
+		A85263F21B590E97003A1FDF /* js to android.html in Resources */ = {isa = PBXBuildFile; fileRef = A85263F11B590E97003A1FDF /* js to android.html */; };
+		A85263F61B590EDD003A1FDF /* apicore.js in Resources */ = {isa = PBXBuildFile; fileRef = A85263F41B590EDD003A1FDF /* apicore.js */; };
+		A85263F71B590EDD003A1FDF /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */; };
 		A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */; };
 		A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */; };
 		A86168D31B5886B800B5BDAF /* Jstophoto_url_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */; };
@@ -59,6 +62,9 @@
 		A812BF771B57E4F300529A1A /* jstoiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jstoiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A812BF7C1B57E4F300529A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A812BF7D1B57E4F300529A1A /* jstoiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jstoiosTests.m; sourceTree = "<group>"; };
+		A85263F11B590E97003A1FDF /* js to android.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js to android.html"; sourceTree = "<group>"; };
+		A85263F41B590EDD003A1FDF /* apicore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = apicore.js; sourceTree = "<group>"; };
+		A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.4.min.js"; sourceTree = "<group>"; };
 		A86168CB1B5885E100B5BDAF /* Jstofile_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstofile_ViewController.h; sourceTree = "<group>"; };
 		A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstofile_ViewController.m; sourceTree = "<group>"; };
 		A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JstoPhoto_ViewController.h; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 				A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */,
 				A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */,
 				A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */,
+				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
 			);
 			path = jstoios;
 			sourceTree = "<group>";
@@ -161,7 +168,6 @@
 		A812BF611B57E4F300529A1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
 				A812BF6E1B57E4F300529A1A /* Images.xcassets */,
 				A812BF701B57E4F300529A1A /* LaunchScreen.xib */,
 				A86168FD1B58BCBE00B5BDAF /* SystemConfiguration.framework */,
@@ -197,9 +203,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A85263F31B590EDD003A1FDF /* js */ = {
+			isa = PBXGroup;
+			children = (
+				A85263F41B590EDD003A1FDF /* apicore.js */,
+				A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
 		A86168D91B58886600B5BDAF /* html */ = {
 			isa = PBXGroup;
 			children = (
+				A85263F31B590EDD003A1FDF /* js */,
+				A85263F11B590E97003A1FDF /* js to android.html */,
 				A86168DB1B58887F00B5BDAF /* js to file.html */,
 				A86168DF1B58A89100B5BDAF /* js to photo.html */,
 			);
@@ -301,7 +318,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85263F61B590EDD003A1FDF /* apicore.js in Resources */,
+				A85263F71B590EDD003A1FDF /* jquery-2.1.4.min.js in Resources */,
 				A812BF6D1B57E4F300529A1A /* Main.storyboard in Resources */,
+				A85263F21B590E97003A1FDF /* js to android.html in Resources */,
 				A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */,
 				A86168D81B58883600B5BDAF /* readme.txt in Resources */,
 				A86168E31B58A89100B5BDAF /* js to photo.html in Resources */,
