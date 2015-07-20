@@ -11,7 +11,7 @@
 
 @interface JstoPhoto_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
-    NSString *callback;
+    NSString *callbackmethod;
     NSString *htmlstr;
 }
 @property(nonatomic,retain) UIWebView *mWebView;
@@ -54,32 +54,37 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
+    //请求URL
     NSString *requestString = [[request URL] absoluteString];
+    //定义解析规则：js-call://:参数一:参数二
+    //参数一：方法名
+    //参数二：方法参数
     NSString *protocol = @"js-call://";
+    
     if ([requestString hasPrefix:protocol]) {
         NSString *requestContent = [requestString substringFromIndex:[protocol length]];
         NSArray *vals = [requestContent componentsSeparatedByString:@"/"];
-        //拍照
-        if ([[vals objectAtIndex:0] isEqualToString:@"camera"]) {
-            callback = [vals objectAtIndex:1];
-            [self doAction:UIImagePickerControllerSourceTypeCamera];
-        }
-        //相册
-        else if([[vals objectAtIndex:0] isEqualToString:@"photolibrary"]) {
-            callback = [vals objectAtIndex:1];
-            [self doAction:UIImagePickerControllerSourceTypePhotoLibrary];
-        }
-        //图库
-        else if([[vals objectAtIndex:0] isEqualToString:@"album"]) {
-            callback = [vals objectAtIndex:1];
-            [self doAction:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
-        }
-        else {
-            [webView stringByEvaluatingJavaScriptFromString:@"alert('未定义/lwme.cnblogs.com');"];
-        }
+        //动态执行js方法
+        SEL sel = NSSelectorFromString([NSString stringWithFormat:@"%@:",[vals objectAtIndex:0]]);
+        [self performSelector:sel withObject:[vals objectAtIndex:1]];
         return NO;
     }
     return YES;
+}
+
+/********************************************************** 调用拍照，图库，相册 **********************************************************/
+-(void)camera:(NSString *)param{
+    callbackmethod = param;
+    [self doAction:(UIImagePickerControllerSourceTypeCamera)];
+}
+
+-(void)photolibrary:(NSString *)param{
+    callbackmethod = param;
+    [self doAction:(UIImagePickerControllerSourceTypePhotoLibrary)];
+}
+-(void)album:(NSString *)param{
+    callbackmethod = param;
+    [self doAction:(UIImagePickerControllerSourceTypeSavedPhotosAlbum)];
 }
 
 - (void)doAction:(UIImagePickerControllerSourceType)sourceType
@@ -134,12 +139,15 @@
     
     [picker dismissModalViewControllerAnimated:YES];
 }
+/**********************************************************************************************************************************/
 
 //回调JS方法
 - (void)doCallback:(NSString *)data
 {
-    [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callback, data]];
+    [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callbackmethod, data]];
 }
+
+
 @end
 
 
