@@ -19,7 +19,6 @@
 		A85263F71B590EDD003A1FDF /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */; };
 		A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */; };
 		A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */; };
-		A86168D31B5886B800B5BDAF /* Jstophoto_url_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */; };
 		A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */; };
 		A86168D81B58883600B5BDAF /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A86168D71B58883600B5BDAF /* readme.txt */; };
 		A86168DD1B58887F00B5BDAF /* js to file.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DB1B58887F00B5BDAF /* js to file.html */; };
@@ -69,8 +68,6 @@
 		A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstofile_ViewController.m; sourceTree = "<group>"; };
 		A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JstoPhoto_ViewController.h; sourceTree = "<group>"; };
 		A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JstoPhoto_ViewController.m; sourceTree = "<group>"; };
-		A86168D11B5886B800B5BDAF /* Jstophoto_url_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstophoto_url_ViewController.h; sourceTree = "<group>"; };
-		A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstophoto_url_ViewController.m; sourceTree = "<group>"; };
 		A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstorecord_ViewController.h; sourceTree = "<group>"; };
 		A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstorecord_ViewController.m; sourceTree = "<group>"; };
 		A86168D71B58883600B5BDAF /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
@@ -154,8 +151,6 @@
 				A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */,
 				A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */,
 				A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */,
-				A86168D11B5886B800B5BDAF /* Jstophoto_url_ViewController.h */,
-				A86168D21B5886B800B5BDAF /* Jstophoto_url_ViewController.m */,
 				A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */,
 				A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */,
 				A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */,
@@ -352,7 +347,6 @@
 				A86169011B58BF3D00B5BDAF /* NavTitleButton.m in Sources */,
 				A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */,
 				A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */,
-				A86168D31B5886B800B5BDAF /* Jstophoto_url_ViewController.m in Sources */,
 				A812BF641B57E4F300529A1A /* main.m in Sources */,
 				A86168ED1B58AA3700B5BDAF /* NSData+Base64.m in Sources */,
 			);
