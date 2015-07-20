@@ -11,8 +11,8 @@
 
 @interface JstoPhoto_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
-     NSString *callback;
-     NSString *htmlstr;
+    NSString *callback;
+    NSString *htmlstr;
 }
 @property(nonatomic,retain) UIWebView *mWebView;
 
@@ -59,13 +59,18 @@
     if ([requestString hasPrefix:protocol]) {
         NSString *requestContent = [requestString substringFromIndex:[protocol length]];
         NSArray *vals = [requestContent componentsSeparatedByString:@"/"];
+        //拍照
         if ([[vals objectAtIndex:0] isEqualToString:@"camera"]) {
             callback = [vals objectAtIndex:1];
             [self doAction:UIImagePickerControllerSourceTypeCamera];
-        } else if([[vals objectAtIndex:0] isEqualToString:@"photolibrary"]) {
+        }
+        //相册
+        else if([[vals objectAtIndex:0] isEqualToString:@"photolibrary"]) {
             callback = [vals objectAtIndex:1];
             [self doAction:UIImagePickerControllerSourceTypePhotoLibrary];
-        } else if([[vals objectAtIndex:0] isEqualToString:@"album"]) {
+        }
+        //图库
+        else if([[vals objectAtIndex:0] isEqualToString:@"album"]) {
             callback = [vals objectAtIndex:1];
             [self doAction:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
         }
@@ -84,13 +89,20 @@
     if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
         imagePicker.sourceType = sourceType;
     } else {
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"照片获取失败" message:@"没有可用的照片来源" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"照片获取失败"
+                                                     message:@"没有可用的照片来源"
+                                                    delegate:nil
+                                           cancelButtonTitle:@"确定"
+                                           otherButtonTitles:nil, nil];
         [av show];
         return;
     }
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
-        [popover presentPopoverFromRect:CGRectMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 3, 10, 10) inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        [popover presentPopoverFromRect:CGRectMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 3, 10, 10)
+                                 inView:self.view
+               permittedArrowDirections:UIPopoverArrowDirectionAny
+                               animated:YES];
     } else {
         [self presentModalViewController:imagePicker animated:YES];
     }
@@ -123,6 +135,7 @@
     [picker dismissModalViewControllerAnimated:YES];
 }
 
+//回调JS方法
 - (void)doCallback:(NSString *)data
 {
     [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callback, data]];

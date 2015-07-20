@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [[PgyManager sharedPgyManager] startManagerWithAppId:@"c310389cf4d3b35d261f2e02cdb5308f"];
+    //关闭手势反馈
+    [[PgyManager sharedPgyManager] setEnableFeedback:NO];
+
     return YES;
 }
 

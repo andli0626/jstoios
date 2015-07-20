@@ -1,6 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>js to file</title>
+        <meta name="description" content="" />
+        <meta name="author" content="Administrator" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    </head>
+    <body>
+
 <script>
     
-    
+    //调用方式一：超链接方式
     
     //相机回调
     function cameraCallback(imageData) {
@@ -17,7 +31,26 @@
         var img = createImageWithBase64(imageData);
         document.getElementById("albumWrapper").appendChild(img);
     }
-    //显示图片回调
+
+    //调用方式二：按钮方式
+    function clickcamera(){
+        var url="js-call://camera/cameraCallback";
+        document.location = url;
+    }
+
+    function clickphotolibrary(){
+        var url="js-call://photolibrary/photolibraryCallback";
+        document.location = url;
+
+    }
+
+    function clickalbum(){
+        var url="js-call://album/albumCallback";
+        document.location = url;
+
+    }
+
+    //js回调方法：获取返回图片
     function createImageWithBase64(imageData) {
         var img = new Image();
         img.src = "data:image/jpeg;base64," + imageData;
@@ -26,27 +59,42 @@
         return img;
     }
 </script>
+
 <p>加载本地HTML文件</p>
 <p style="text-align:center;padding:20px;">
+
+    <!-- 调用方式一：超链接调用 -->
     <a href="js-call://camera/cameraCallback">拍照</a>&nbsp;&nbsp;
+
     <a href="js-call://photolibrary/photolibraryCallback">图库</a>&nbsp;&nbsp;
+
     <a href="js-call://album/albumCallback">相册</a>
+    <br></br>
+    <!-- 调用方式二：按钮调用-->
+    <button onclick="clickcamera('');">拍照</button>
+    <br></br>
+    <button onclick="clickphotolibrary('');">图库</button>
+    <br></br>
+    <button onclick="clickalbum('');">相册</button>
+    
 </p>
 
 <fieldset>
-    <legend>拍照</legend>
+    <legend>拍照--图片</legend>
     <div id="cameraWrapper">
     </div>
 </fieldset>
 
 <fieldset>
-    <legend>图库</legend>
+    <legend>图库--图片</legend>
     <div id="photolibraryWrapper">
     </div>
 </fieldset>
 
 <fieldset>
-    <legend>相册</legend>
+    <legend>相册--图片</legend>
     <div id="albumWrapper">
     </div>
 </fieldset>
+    </body>
+</html>
