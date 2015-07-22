@@ -11,15 +11,15 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script>
             
-            //调用oc
-            function clickrecord(){
-                var url="js-call://record/recordCallback";
-                document.location = url;
-            }
+        //js调用录音
+        function clickrecord(){
+            var url="js-call://record/recordCallback";
+            document.location = url;
+        }
         
-        //回调js
+        //回调返回录音数据：格式mp3
         function recordCallback(data) {
-
+            
             document.getElementById("recordWrapper").innerHTML="<h2>"+data+"</h2>";
         }
         
