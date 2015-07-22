@@ -14,11 +14,10 @@
 		A812BF6F1B57E4F300529A1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A812BF6E1B57E4F300529A1A /* Images.xcassets */; };
 		A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A812BF701B57E4F300529A1A /* LaunchScreen.xib */; };
 		A812BF7E1B57E4F300529A1A /* jstoiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A812BF7D1B57E4F300529A1A /* jstoiosTests.m */; };
-		A85263F61B590EDD003A1FDF /* apicore.js in Resources */ = {isa = PBXBuildFile; fileRef = A85263F41B590EDD003A1FDF /* apicore.js */; };
-		A85263F71B590EDD003A1FDF /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */; };
+		A8293C291B5F2FF500EA6DF9 /* js to record.html in Resources */ = {isa = PBXBuildFile; fileRef = A8293C281B5F2FF500EA6DF9 /* js to record.html */; };
 		A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */; };
 		A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */; };
-		A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */; };
+		A86168D61B5886D100B5BDAF /* Record_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86168D51B5886D100B5BDAF /* Record_ViewController.m */; };
 		A86168D81B58883600B5BDAF /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A86168D71B58883600B5BDAF /* readme.txt */; };
 		A86168DD1B58887F00B5BDAF /* js to inputfile.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DB1B58887F00B5BDAF /* js to inputfile.html */; };
 		A86168E31B58A89100B5BDAF /* js to photo.html in Resources */ = {isa = PBXBuildFile; fileRef = A86168DF1B58A89100B5BDAF /* js to photo.html */; };
@@ -34,6 +33,13 @@
 		A86169011B58BF3D00B5BDAF /* NavTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A86169001B58BF3D00B5BDAF /* NavTitleButton.m */; };
 		A86169041B58BF7C00B5BDAF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A86169031B58BF7C00B5BDAF /* UIView+Extension.m */; };
 		A86169071B58D51600B5BDAF /* ShowCode_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */; };
+		A8DC1A6B1B5E6A4000044A25 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DC1A6A1B5E6A4000044A25 /* CoreAudio.framework */; };
+		A8DC1A6D1B5E6A7400044A25 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DC1A6C1B5E6A7400044A25 /* CoreFoundation.framework */; };
+		A8DC1A6F1B5E6A8700044A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DC1A6E1B5E6A8700044A25 /* Foundation.framework */; };
+		A8DC1A711B5E6A9200044A25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DC1A701B5E6A9200044A25 /* UIKit.framework */; };
+		A8DC1A731B5E6AA000044A25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DC1A721B5E6AA000044A25 /* CoreGraphics.framework */; };
+		A8DC1A761B5E6B2F00044A25 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DC1A751B5E6B2F00044A25 /* libmp3lame.a */; };
+		A8DC1A7A1B5E6C1D00044A25 /* Jstorecord_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DC1A791B5E6C1D00044A25 /* Jstorecord_ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +66,13 @@
 		A812BF771B57E4F300529A1A /* jstoiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jstoiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A812BF7C1B57E4F300529A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A812BF7D1B57E4F300529A1A /* jstoiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jstoiosTests.m; sourceTree = "<group>"; };
-		A85263F41B590EDD003A1FDF /* apicore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = apicore.js; sourceTree = "<group>"; };
-		A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.4.min.js"; sourceTree = "<group>"; };
+		A8293C281B5F2FF500EA6DF9 /* js to record.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js to record.html"; sourceTree = "<group>"; };
 		A86168CB1B5885E100B5BDAF /* Jstofile_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstofile_ViewController.h; sourceTree = "<group>"; };
 		A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstofile_ViewController.m; sourceTree = "<group>"; };
 		A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JstoPhoto_ViewController.h; sourceTree = "<group>"; };
 		A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JstoPhoto_ViewController.m; sourceTree = "<group>"; };
-		A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstorecord_ViewController.h; sourceTree = "<group>"; };
-		A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstorecord_ViewController.m; sourceTree = "<group>"; };
+		A86168D41B5886D100B5BDAF /* Record_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record_ViewController.h; sourceTree = "<group>"; };
+		A86168D51B5886D100B5BDAF /* Record_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record_ViewController.m; sourceTree = "<group>"; };
 		A86168D71B58883600B5BDAF /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		A86168DB1B58887F00B5BDAF /* js to inputfile.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js to inputfile.html"; sourceTree = "<group>"; };
 		A86168DE1B58894300B5BDAF /* my.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my.pch; sourceTree = "<group>"; };
@@ -88,6 +93,15 @@
 		A86169031B58BF7C00B5BDAF /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCode_ViewController.h; sourceTree = "<group>"; };
 		A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCode_ViewController.m; sourceTree = "<group>"; };
+		A8DC1A6A1B5E6A4000044A25 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A8DC1A6C1B5E6A7400044A25 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A8DC1A6E1B5E6A8700044A25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8DC1A701B5E6A9200044A25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A8DC1A721B5E6AA000044A25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8DC1A741B5E6B2F00044A25 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		A8DC1A751B5E6B2F00044A25 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		A8DC1A781B5E6C1D00044A25 /* Jstorecord_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jstorecord_ViewController.h; sourceTree = "<group>"; };
+		A8DC1A791B5E6C1D00044A25 /* Jstorecord_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jstorecord_ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +109,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86168FE1B58BCBE00B5BDAF /* SystemConfiguration.framework in Frameworks */,
+				A8DC1A731B5E6AA000044A25 /* CoreGraphics.framework in Frameworks */,
+				A8DC1A711B5E6A9200044A25 /* UIKit.framework in Frameworks */,
+				A8DC1A6F1B5E6A8700044A25 /* Foundation.framework in Frameworks */,
+				A8DC1A6D1B5E6A7400044A25 /* CoreFoundation.framework in Frameworks */,
 				A86168FC1B58BCB500B5BDAF /* AVFoundation.framework in Frameworks */,
+				A8DC1A6B1B5E6A4000044A25 /* CoreAudio.framework in Frameworks */,
+				A86168FE1B58BCBE00B5BDAF /* SystemConfiguration.framework in Frameworks */,
 				A86168FA1B58BCAE00B5BDAF /* AudioToolbox.framework in Frameworks */,
 				A86168F81B58BCA500B5BDAF /* CoreMotion.framework in Frameworks */,
 				A86168F61B58BC9800B5BDAF /* SceneKit.framework in Frameworks */,
 				A86168F41B58BC8F00B5BDAF /* OpenGLES.framework in Frameworks */,
 				A86168F21B58BC8600B5BDAF /* CoreTelephony.framework in Frameworks */,
 				A86168F01B58BC4F00B5BDAF /* PgySDK.framework in Frameworks */,
+				A8DC1A761B5E6B2F00044A25 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,15 +164,15 @@
 		A812BF601B57E4F300529A1A /* jstoios */ = {
 			isa = PBXGroup;
 			children = (
-				A86168EE1B58BC0C00B5BDAF /* tools */,
+				A8DC1A7B1B5E6C2700044A25 /* showcode */,
+				A8DC1A771B5E6C0500044A25 /* record */,
+				A86168EE1B58BC0C00B5BDAF /* category */,
 				A86168CB1B5885E100B5BDAF /* Jstofile_ViewController.h */,
 				A86168CC1B5885E100B5BDAF /* Jstofile_ViewController.m */,
 				A86168CE1B58869A00B5BDAF /* JstoPhoto_ViewController.h */,
 				A86168CF1B58869A00B5BDAF /* JstoPhoto_ViewController.m */,
-				A86168D41B5886D100B5BDAF /* Jstorecord_ViewController.h */,
-				A86168D51B5886D100B5BDAF /* Jstorecord_ViewController.m */,
-				A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */,
-				A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */,
+				A8DC1A781B5E6C1D00044A25 /* Jstorecord_ViewController.h */,
+				A8DC1A791B5E6C1D00044A25 /* Jstorecord_ViewController.m */,
 				A812BF6B1B57E4F300529A1A /* Main.storyboard */,
 			);
 			path = jstoios;
@@ -163,6 +183,13 @@
 			children = (
 				A812BF6E1B57E4F300529A1A /* Images.xcassets */,
 				A812BF701B57E4F300529A1A /* LaunchScreen.xib */,
+				A8DC1A741B5E6B2F00044A25 /* lame.h */,
+				A8DC1A751B5E6B2F00044A25 /* libmp3lame.a */,
+				A8DC1A721B5E6AA000044A25 /* CoreGraphics.framework */,
+				A8DC1A701B5E6A9200044A25 /* UIKit.framework */,
+				A8DC1A6E1B5E6A8700044A25 /* Foundation.framework */,
+				A8DC1A6C1B5E6A7400044A25 /* CoreFoundation.framework */,
+				A8DC1A6A1B5E6A4000044A25 /* CoreAudio.framework */,
 				A86168FD1B58BCBE00B5BDAF /* SystemConfiguration.framework */,
 				A86168FB1B58BCB500B5BDAF /* AVFoundation.framework */,
 				A86168F91B58BCAE00B5BDAF /* AudioToolbox.framework */,
@@ -196,27 +223,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A85263F31B590EDD003A1FDF /* js */ = {
-			isa = PBXGroup;
-			children = (
-				A85263F41B590EDD003A1FDF /* apicore.js */,
-				A85263F51B590EDD003A1FDF /* jquery-2.1.4.min.js */,
-			);
-			path = js;
-			sourceTree = "<group>";
-		};
 		A86168D91B58886600B5BDAF /* html */ = {
 			isa = PBXGroup;
 			children = (
-				A85263F31B590EDD003A1FDF /* js */,
 				A86168DB1B58887F00B5BDAF /* js to inputfile.html */,
 				A86168DF1B58A89100B5BDAF /* js to photo.html */,
+				A8293C281B5F2FF500EA6DF9 /* js to record.html */,
 			);
 			name = html;
 			path = jstoios;
 			sourceTree = "<group>";
 		};
-		A86168EE1B58BC0C00B5BDAF /* tools */ = {
+		A86168EE1B58BC0C00B5BDAF /* category */ = {
 			isa = PBXGroup;
 			children = (
 				A86169021B58BF7B00B5BDAF /* UIView+Extension.h */,
@@ -226,7 +244,25 @@
 				A86168EB1B58AA3700B5BDAF /* NSData+Base64.h */,
 				A86168EC1B58AA3700B5BDAF /* NSData+Base64.m */,
 			);
-			name = tools;
+			name = category;
+			sourceTree = "<group>";
+		};
+		A8DC1A771B5E6C0500044A25 /* record */ = {
+			isa = PBXGroup;
+			children = (
+				A86168D41B5886D100B5BDAF /* Record_ViewController.h */,
+				A86168D51B5886D100B5BDAF /* Record_ViewController.m */,
+			);
+			name = record;
+			sourceTree = "<group>";
+		};
+		A8DC1A7B1B5E6C2700044A25 /* showcode */ = {
+			isa = PBXGroup;
+			children = (
+				A86169051B58D51600B5BDAF /* ShowCode_ViewController.h */,
+				A86169061B58D51600B5BDAF /* ShowCode_ViewController.m */,
+			);
+			name = showcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,13 +346,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A85263F61B590EDD003A1FDF /* apicore.js in Resources */,
-				A85263F71B590EDD003A1FDF /* jquery-2.1.4.min.js in Resources */,
 				A812BF6D1B57E4F300529A1A /* Main.storyboard in Resources */,
 				A812BF721B57E4F300529A1A /* LaunchScreen.xib in Resources */,
 				A86168D81B58883600B5BDAF /* readme.txt in Resources */,
 				A86168E31B58A89100B5BDAF /* js to photo.html in Resources */,
 				A812BF6F1B57E4F300529A1A /* Images.xcassets in Resources */,
+				A8293C291B5F2FF500EA6DF9 /* js to record.html in Resources */,
 				A86168DD1B58887F00B5BDAF /* js to inputfile.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,11 +374,12 @@
 				A812BF6A1B57E4F300529A1A /* ViewController.m in Sources */,
 				A812BF671B57E4F300529A1A /* AppDelegate.m in Sources */,
 				A86169071B58D51600B5BDAF /* ShowCode_ViewController.m in Sources */,
-				A86168D61B5886D100B5BDAF /* Jstorecord_ViewController.m in Sources */,
+				A86168D61B5886D100B5BDAF /* Record_ViewController.m in Sources */,
 				A86169011B58BF3D00B5BDAF /* NavTitleButton.m in Sources */,
 				A86168D01B58869A00B5BDAF /* JstoPhoto_ViewController.m in Sources */,
 				A86168CD1B5885E100B5BDAF /* Jstofile_ViewController.m in Sources */,
 				A812BF641B57E4F300529A1A /* main.m in Sources */,
+				A8DC1A7A1B5E6C1D00044A25 /* Jstorecord_ViewController.m in Sources */,
 				A86168ED1B58AA3700B5BDAF /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +516,10 @@
 				GCC_PREFIX_HEADER = jstoios/my.pch;
 				INFOPLIST_FILE = jstoios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jstoios",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -496,6 +536,10 @@
 				GCC_PREFIX_HEADER = jstoios/my.pch;
 				INFOPLIST_FILE = jstoios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jstoios",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

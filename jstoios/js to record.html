@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>js to file</title>
+        <meta name="description" content="" />
+        <meta name="author" content="Administrator" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script>
+            
+            //调用oc
+            function clickrecord(){
+                var url="js-call://record/recordCallback";
+                document.location = url;
+            }
+        
+        //回调js
+        function recordCallback(data) {
+
+            document.getElementById("recordWrapper").innerHTML="<h2>"+data+"</h2>";
+        }
+        
+        </script>
+    </head>
+    <body>
+       
+        <p>加载本地HTML文件</p>
+        
+        <p style="text-align:center;padding:20px;"> <button onclick="clickrecord('');">调用录音</button> </p>
+        
+        <fieldset>
+            <legend>录音文件路径</legend>
+            <div id="recordWrapper">
+            </div>
+        </fieldset>
+        
+    </body>
+</html>
