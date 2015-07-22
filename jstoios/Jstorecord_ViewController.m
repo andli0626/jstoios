@@ -103,7 +103,8 @@
 - (void)doCallback:(NSString *)path
 {
     //读取录音文件
-    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSData *recdata = [NSData dataWithContentsOfFile:path];
+    NSString *data = [recdata base64Encoding];//转为base64
     
     [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callbackmethod, path]];
 }
