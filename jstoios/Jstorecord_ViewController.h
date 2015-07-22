@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^RecordPathBlock) (NSString *);
+
 @interface Jstorecord_ViewController : UIViewController
 
 @end

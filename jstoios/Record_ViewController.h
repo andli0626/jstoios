@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol getRecPathDelegate <NSObject>
+
+-(void)getRecPath:(NSString *)path;
+
+@end
+
 @interface Record_ViewController : UIViewController
+
+@property(nonatomic,retain) id<getRecPathDelegate> delegate;
 
 @end

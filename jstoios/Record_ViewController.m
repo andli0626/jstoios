@@ -219,8 +219,10 @@
         NSLog(@"%@",[exception description]);
     }
     @finally {
+#pragma mark 关闭页面
         audioFileSavePath = mp3FilePath;
-        NSLog(@"MP3生成成功: %@",audioFileSavePath);
+        //NSLog(@"MP3生成成功: %@",audioFileSavePath);
+        [self.delegate getRecPath:audioFileSavePath];
 //        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"mp3转化成功！" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
 //        [alert show];
         [self dismissViewControllerAnimated:YES completion:nil];

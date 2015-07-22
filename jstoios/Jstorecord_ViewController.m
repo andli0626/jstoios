@@ -12,10 +12,12 @@
 
 #import "Record_ViewController.h"
 
-@interface Jstorecord_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface Jstorecord_ViewController ()<UIWebViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate,getRecPathDelegate>
 {
     NSString *callbackmethod;
     NSString *htmlstr;
+    
+    NSString *recpath;
 }
 @property(nonatomic,retain) UIWebView *mWebView;
 @end
@@ -76,26 +78,34 @@
 
 
 -(void)record:(NSString *)param{
-    NSLog(@"js to record");
+
     callbackmethod = param;
 
     //打开录音界面
     
     Record_ViewController *view =[[Record_ViewController alloc]init];
+    view.delegate = self;
     [self presentViewController:view
                        animated:YES
                      completion:^(void){
                          NSLog(@"开启录音界面");
     }];
-    
+}
+
+-(void)getRecPath:(NSString *)path{
+    recpath = path;
+    NSLog(@"代理获取录音路径  %@",recpath);
     //回传参数
-    [self doCallback:@"record path"];
+    [self doCallback:recpath];
 }
 
 //回调JS方法
-- (void)doCallback:(NSString *)data
+- (void)doCallback:(NSString *)path
 {
-    [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callbackmethod, data]];
+    //读取录音文件
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    
+    [_mWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callbackmethod, path]];
 }
 
 
